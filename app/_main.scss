@@ -1,0 +1,135 @@
+.main {
+    width: inherit !important;
+    max-width: 43.125em;
+    margin: 180px auto 0 auto;
+
+    .title {
+        color: $White;
+        text-transform: uppercase;
+        letter-spacing: 0.35ch;
+        text-align: center;
+        margin-bottom: 35px;
+
+        @include breakpoint-up(medium) {
+            font-size: 1.25rem;
+            letter-spacing: 0.45ch;
+        }
+
+        @include breakpoint-up(large) {
+            font-size: 1.5rem;
+            letter-spacing: 0.55ch;
+        }
+    }
+
+    .timer {
+        display: flex;
+        justify-content: center;
+        width: inherit;
+
+        .tboxwrap {
+            text-align: center;
+
+            .tbox {
+                // display: inline-block;
+                position: relative;
+                background-image: linear-gradient(to bottom, #2c2e42 50%, $Darkdesaturatedblue 50%);
+                height: 80px;
+                width: 70px;
+                max-width: 9.25em;
+                border-radius: 5px;
+                box-shadow: 0px 6px 2px 0px #151724;
+                overflow: hidden;
+                margin: 8px;
+
+                @include breakpoint-up(medium) {
+                    height: 100px;
+                    width: 90px;
+                }
+
+                @include breakpoint-up(large) {
+                    height: 138px;
+                    width: 148px;
+                }
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    left: -6px;
+                    top: 50%;
+                    transform: translate(-0%, -50%);
+                    height: 10px;
+                    width: 10px;
+                    border-radius: 50%;
+                    background-image: radial-gradient(25px circle, $Verydarkblue, transparent);
+                }
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    right: -6px;
+                    top: 50%;
+                    transform: translate(-0%, -50%);
+                    height: 10px;
+                    width: 10px;
+                    border-radius: 50%;
+                    background-image: radial-gradient(25px circle, $Verydarkblue, transparent);
+                }
+
+                p {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    font-size: 2rem;
+                    color: $Softred;
+                    margin-top: 0px;
+
+                    @include breakpoint-up(medium) {
+                        font-size: 2.25rem;
+                    }
+
+                    @include breakpoint-up(large) {
+                        font-size: 3.35rem;
+                    }
+                }
+            }
+
+            p {
+                color: $Grayishblue;
+                font-size: 0.625rem;
+                margin-top: 20px;
+
+                @include breakpoint-up(medium) {
+                    font-size: 0.825rem;
+                }
+
+                @include breakpoint-up(large) {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
+
+.footer {
+    position: absolute;
+    bottom: 0px;
+    height: 205px;
+    width: 100%;
+    text-align: center;
+    background-image: url('./images/pattern-hills.svg');
+    background-repeat: no-repeat;
+    background-position: bottom left -140px;
+    padding: 90px 0 0 0;
+    margin: auto;
+    z-index: -1;
+
+    @include breakpoint-up(large) {
+        background-size: 100% 205px;
+        background-position: bottom left;
+    }
+
+    img {
+        margin: 8px;
+    }
+}

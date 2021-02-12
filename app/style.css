@@ -1,0 +1,185 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  min-height: 100%;
+}
+
+*, ::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100%;
+  font-family: 'Red Hat Text', sans-serif;
+  font-size: 14px;
+  background-image: url("./images/bg-stars.svg");
+  background-repeat: repeat;
+  background-color: #1e1f29;
+  overflow: hidden;
+}
+
+.main {
+  width: inherit !important;
+  max-width: 43.125em;
+  margin: 180px auto 0 auto;
+}
+
+.main .title {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.35ch;
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+@media (min-width: 40em) {
+  .main .title {
+    font-size: 1.25rem;
+    letter-spacing: 0.45ch;
+  }
+}
+
+@media (min-width: 64em) {
+  .main .title {
+    font-size: 1.5rem;
+    letter-spacing: 0.55ch;
+  }
+}
+
+.main .timer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: inherit;
+}
+
+.main .timer .tboxwrap {
+  text-align: center;
+}
+
+.main .timer .tboxwrap .tbox {
+  position: relative;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #2c2e42), color-stop(50%, #343650));
+  background-image: linear-gradient(to bottom, #2c2e42 50%, #343650 50%);
+  height: 80px;
+  width: 70px;
+  max-width: 9.25em;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 6px 2px 0px #151724;
+          box-shadow: 0px 6px 2px 0px #151724;
+  overflow: hidden;
+  margin: 8px;
+}
+
+@media (min-width: 40em) {
+  .main .timer .tboxwrap .tbox {
+    height: 100px;
+    width: 90px;
+  }
+}
+
+@media (min-width: 64em) {
+  .main .timer .tboxwrap .tbox {
+    height: 138px;
+    width: 148px;
+  }
+}
+
+.main .timer .tboxwrap .tbox::before {
+  content: '';
+  position: absolute;
+  left: -6px;
+  top: 50%;
+  -webkit-transform: translate(0%, -50%);
+          transform: translate(0%, -50%);
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-image: radial-gradient(25px circle, #1e1f29, transparent);
+}
+
+.main .timer .tboxwrap .tbox::after {
+  content: '';
+  position: absolute;
+  right: -6px;
+  top: 50%;
+  -webkit-transform: translate(0%, -50%);
+          transform: translate(0%, -50%);
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-image: radial-gradient(25px circle, #1e1f29, transparent);
+}
+
+.main .timer .tboxwrap .tbox p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 2rem;
+  color: #fb6087;
+  margin-top: 0px;
+}
+
+@media (min-width: 40em) {
+  .main .timer .tboxwrap .tbox p {
+    font-size: 2.25rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .main .timer .tboxwrap .tbox p {
+    font-size: 3.35rem;
+  }
+}
+
+.main .timer .tboxwrap p {
+  color: #8486a9;
+  font-size: 0.625rem;
+  margin-top: 20px;
+}
+
+@media (min-width: 40em) {
+  .main .timer .tboxwrap p {
+    font-size: 0.825rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .main .timer .tboxwrap p {
+    font-size: 1rem;
+  }
+}
+
+.footer {
+  position: absolute;
+  bottom: 0px;
+  height: 205px;
+  width: 100%;
+  text-align: center;
+  background-image: url("./images/pattern-hills.svg");
+  background-repeat: no-repeat;
+  background-position: bottom left -140px;
+  padding: 90px 0 0 0;
+  margin: auto;
+  z-index: -1;
+}
+
+@media (min-width: 64em) {
+  .footer {
+    background-size: 100% 205px;
+    background-position: bottom left;
+  }
+}
+
+.footer img {
+  margin: 8px;
+}
+/*# sourceMappingURL=style.css.map */

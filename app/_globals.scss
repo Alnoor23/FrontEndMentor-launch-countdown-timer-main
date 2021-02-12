@@ -1,0 +1,23 @@
+@import "variables";
+
+html {
+    box-sizing: border-box;
+    min-height:100%;
+    
+}
+
+*, ::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height:100%;
+    font-family: 'Red Hat Text', sans-serif;
+    font-size: 14px;
+    background-image: url('./images/bg-stars.svg');
+    background-repeat: repeat;
+    background-color: $Verydarkblue;
+    overflow: hidden;
+}
