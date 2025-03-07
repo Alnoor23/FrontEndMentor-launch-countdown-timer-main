@@ -6,7 +6,7 @@ const minute = document.querySelector('#minute');
 const second = document.querySelector('#second');
 
 // Set Launch Date (ms)
-const launchDate = new Date('Mar 5, 2021 13:00:00').getTime();
+const launchDate = new Date('Jan 1, 2026 00:00:00').getTime(); // -_-
 
 // Update every second
 const intvl = setInterval(() => {
